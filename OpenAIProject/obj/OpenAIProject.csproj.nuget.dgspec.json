@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\OpenAIProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\OpenAIProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\OpenAIProject.csproj",
+        "projectName": "OpenAIProject",
+        "projectPath": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\OpenAIProject.csproj",
+        "packagesPath": "C:\\Users\\leonlr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\NuGet.Config",
+          "C:\\Users\\leonlr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DevExtreme.AspNet.Core": {
+              "target": "Package",
+              "version": "[22.2.4, )"
+            },
+            "DevExtreme.AspNet.Data": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
