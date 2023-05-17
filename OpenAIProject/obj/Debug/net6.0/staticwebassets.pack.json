@@ -1,0 +1,581 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\Site.css",
+      "PackagePath": "staticwebassets\\css\\Site.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx-diagram.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx-diagram.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx-diagram.min.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx-diagram.min.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx-gantt.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx-gantt.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx-gantt.min.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx-gantt.min.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.carmine.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.carmine.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.carmine.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.carmine.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.contrast.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.contrast.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.contrast.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.contrast.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.darkmoon.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.darkmoon.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.darkmoon.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.darkmoon.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.darkviolet.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.darkviolet.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.darkviolet.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.darkviolet.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.greenmist.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.greenmist.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.greenmist.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.greenmist.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.blue.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.blue.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.blue.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.blue.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.blue.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.blue.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.blue.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.blue.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.lime.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.lime.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.lime.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.lime.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.lime.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.lime.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.lime.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.lime.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.orange.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.orange.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.orange.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.orange.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.orange.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.orange.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.orange.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.orange.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.purple.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.purple.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.purple.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.purple.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.purple.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.purple.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.purple.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.purple.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.teal.dark.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.teal.dark.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.teal.dark.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.teal.dark.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.teal.light.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.teal.light.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.material.teal.light.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.material.teal.light.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.softblue.compact.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.softblue.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\dx.softblue.css",
+      "PackagePath": "staticwebassets\\css\\devextreme\\dx.softblue.css"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-300.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-300.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-300.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-300.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-300.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-400.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-400.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-400.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-500.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-500.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-500.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-500.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-500.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-500.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-700.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-700.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-700.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-700.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\fonts\\Roboto-700.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\fonts\\Roboto-700.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxicons.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxicons.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxicons.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxiconsmaterial.ttf",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxiconsmaterial.ttf"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxiconsmaterial.woff",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxiconsmaterial.woff"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\devextreme\\icons\\dxiconsmaterial.woff2",
+      "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxiconsmaterial.woff2"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\FileSaver.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\FileSaver.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\FileSaver.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\FileSaver.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\aspnet\\dx.aspnet.data.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\aspnet\\dx.aspnet.data.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\aspnet\\dx.aspnet.mvc.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\aspnet\\dx.aspnet.mvc.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\event.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\event.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\event.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\event.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\supplemental.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\supplemental.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\supplemental.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\supplemental.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\unresolved.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\unresolved.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\cldr\\unresolved.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\cldr\\unresolved.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-diagram.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-diagram.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-diagram.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-diagram.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-gantt.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-gantt.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-gantt.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-gantt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-quill.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-quill.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx-quill.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx-quill.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.all.debug.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.all.debug.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.all.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.all.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.viz.debug.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.viz.debug.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.viz.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.viz.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.web.debug.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.web.debug.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\dx.web.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\dx.web.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\exceljs.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\exceljs.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\exceljs.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\exceljs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\currency.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\currency.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\currency.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\currency.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\date.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\date.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\date.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\date.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\message.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\message.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\message.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\message.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\number.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\number.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\globalize\\number.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\globalize\\number.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jspdf.plugin.autotable.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jspdf.plugin.autotable.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jspdf.plugin.autotable.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jspdf.plugin.autotable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jspdf.umd.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jspdf.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jspdf.umd.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jspdf.umd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jszip.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jszip.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\jszip.min.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\jszip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.ar.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.ar.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.ca.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.ca.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.cs.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.cs.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.de.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.de.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.el.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.el.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.en.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.en.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.es.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.es.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.fi.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.fi.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.fr.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.fr.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.hu.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.hu.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.it.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.it.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.ja.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.ja.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.lt.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.lt.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.nb.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.nb.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.nl.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.nl.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.pt.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.pt.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.ro.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.ro.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.ru.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.ru.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.sl.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.sl.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.sv.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.sv.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.tr.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.tr.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.vi.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.vi.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.zh-tw.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.zh-tw.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\localization\\dx.messages.zh.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\localization\\dx.messages.zh.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\africa.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\africa.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\canada.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\canada.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\eurasia.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\eurasia.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\europe.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\europe.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\usa.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\usa.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-data\\world.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-data\\world.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.debug.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.debug.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.js"
+    },
+    {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.node.js",
+      "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.node.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.OpenAIProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.OpenAIProject.props",
+      "PackagePath": "build\\OpenAIProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.OpenAIProject.props",
+      "PackagePath": "buildMultiTargeting\\OpenAIProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.OpenAIProject.props",
+      "PackagePath": "buildTransitive\\OpenAIProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

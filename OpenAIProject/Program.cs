@@ -1,25 +1,59 @@
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services
-    .AddControllersWithViews()
-    .AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+namespace OpenAIProject
 {
-    app.UseExceptionHandler("/Home/Error");
+    using Microsoft.AspNetCore.Mvc.Infrastructure;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+
+    using OpenAIProject.Data;
+    using OpenAIProject.Interfaces;
+    using OpenAIProject.Services;
+
+    public static class Program
+    {
+        private static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            var configBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            var configuration = configBuilder.Build();
+
+            // Add services to the container.
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped<IChatService, ChatService>();
+
+            builder.Services
+            .AddControllersWithViews()
+            .AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
+
+           
+
+            builder.Services.AddHttpClient();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapControllerRoute(
+                name: "ChatGPT",
+                pattern: "{controller=ChatGPT}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+    
 }
-app.UseStaticFiles();
 
-app.UseRouting();
 
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();

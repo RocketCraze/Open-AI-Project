@@ -1,11 +1,13 @@
 @using OpenAIProject.Models
+@using OpenAIProject.WebAPIControllers
 
 <h2>Home</h2>
 
-@(Html.DevExtreme().DataGrid<SampleOrder>()
+@*(Html.DevExtreme().DataGrid<SampleOrder>()
     .ShowBorders(true)
     .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
-    .Columns(columns => {
+    .Columns(columns =>
+    {
         columns.AddFor(m => m.OrderID);
         columns.AddFor(m => m.OrderDate);
         columns.AddFor(m => m.CustomerName);
@@ -19,11 +21,13 @@
     .Grouping(g => g.AutoExpandAll(false))
     .RemoteOperations(true)
     .Summary(s => s
-        .TotalItems(totalItems => {
+        .TotalItems(totalItems =>
+        {
             totalItems.AddFor(m => m.ShipCity).SummaryType(SummaryType.Count);
         })
-        .GroupItems(groupItems => {
+        .GroupItems(groupItems =>
+        {
             groupItems.Add().SummaryType(SummaryType.Count);
         })
     )
-)
+)*@
