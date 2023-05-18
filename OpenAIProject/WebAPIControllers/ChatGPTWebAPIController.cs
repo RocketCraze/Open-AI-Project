@@ -7,9 +7,11 @@
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
+    using OpenAI_API;
     using OpenAIProject.Interfaces;
     using OpenAIProject.Models;
     using System.Net.Http.Headers;
+    using static OpenAIProject.WebAPIControllers.ChatGPTWebAPIController;
 
     [Route("api/[controller]")]
     public class ChatGPTWebAPIController : Controller
@@ -32,58 +34,27 @@
         [HttpPost]
         public async Task<IActionResult> Post(string values)
         {
+            OpenAIAPI api = new OpenAIAPI("API_KEY_HERE");
+
             var model = new ChatGPTMessage();
             JsonConvert.PopulateObject(values, model);
+            model.role = "user";
 
-            this.chatService.Add(model);
+            var chat = api.Chat.CreateConversation();
 
-            var content = "{\r\n    \"model\": \"gpt-3.5-turbo\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"Hello\"\r\n        }\r\n    ]\r\n}";
+            chat.AppendUserInput(model.content);
 
-            JObject jsonObject = JObject.Parse(content);
-
-            string newContent = model.content;
-
-            jsonObject["messages"][0]["content"] = newContent;
-
-            var modifiedContent = jsonObject.ToString();
-
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri("https://openai80.p.rapidapi.com/chat/completions"),
-                Headers =
-                {
-                    { "X-RapidAPI-Key", "6ab0e14b9fmsh34afd798c835ac7p18f151jsn85c906eac155" },
-                    { "X-RapidAPI-Host", "openai80.p.rapidapi.com" },
-                },
-                Content = new StringContent(modifiedContent)
-                {
-                    Headers =
-                    {
-                        ContentType = new MediaTypeHeaderValue("application/json")
-                    }
-                }
-            };
-
-            var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            var body = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(body);
+            string response = await chat.GetResponseFromChatbotAsync();
 
             var output = new ChatGPTMessage();
-            JsonConvert.PopulateObject(body, output);
+            output.role = "assistant";
+            output.content = response;
+
+            this.chatService.Add(model);
 
             this.chatService.Add(output);
 
             return Ok();
-        }
-
-        public class Chat
-        {
-            public string model { get; set; }
-
-            public ChatGPTMessage messages { get; set; }
         }
     }
 }
