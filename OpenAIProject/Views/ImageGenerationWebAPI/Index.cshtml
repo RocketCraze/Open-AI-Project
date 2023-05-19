@@ -1,0 +1,77 @@
+﻿@page
+@model List<ImageGenerationAI>
+
+<head>
+    <link rel="stylesheet" href="~/css/imagegenerationstyling.css"/>
+</head>
+
+<h2>Image Generator</h2>
+
+@{
+    var data = ViewBag.Message;
+}
+
+<br />
+
+
+<table class="table table-success table-striped table-bordered">
+    <thead>
+        <tr class="table table-dark">
+            <th>Prompt</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in data)
+        {
+            <tr class ="table">
+                <td>@item.Prompt</td>
+                <td><img src="data:image;base64,@item.Image" alt="Image"></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>Click the button below to enter a prompt to generate an image. Please refresh the page after saving your prompt to display your image in the table above</p>
+
+@(
+Html.DevExtreme().DataGrid<ImageGenerationAI>()
+    .ShowBorders(true)
+    .DataSource(_ => _
+        .Mvc()
+        .Controller("ImageGenerationWebAPI")
+        .InsertAction("Post")
+        .Key("Id"))
+    .Columns(_ =>
+    {
+        _.AddFor(_ => _.Prompt)
+            .EditorOptions(new
+            {
+                placeholder = "Enter a prompt here...",
+            });
+        _.AddFor(_ => _.Image)
+            .Caption("Generated Image")
+            .AllowEditing(false)
+            .EditorOptions(new
+            {
+                placeholder = "Will be generated",
+                width = 300,
+            });
+    })
+    .RemoteOperations(true)
+    .Editing(_ => _
+        .Mode(GridEditMode.Form)
+        .UseIcons(true)
+        .Texts(_ => _.AddRow("Generate an image"))
+        .AllowAdding(true)
+        .RefreshMode(GridEditRefreshMode.Reshape)
+        )
+    .Toolbar(toolbar =>
+    {
+        toolbar.Items(_ => _
+            .Add()
+            .Name("addRowButton")
+            .ShowText(ToolbarItemShowTextMode.Always)
+        );
+    })
+)

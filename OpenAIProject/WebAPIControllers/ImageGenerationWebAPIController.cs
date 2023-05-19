@@ -24,12 +24,14 @@
             this.imageService = imageService;
         }
 
-        [HttpGet("/GetImages")]
-        public IActionResult GetImages(DataSourceLoadOptions loadOptions)
+        public IActionResult Index(DataSourceLoadOptions loadOptions)
         {
-            var model = new List<ImageGenerationAI>();
-            model = this.imageService.GetAll();
-            return this.Json(DataSourceLoader.Load(model, loadOptions));
+            var models = new List<ImageGenerationAI>();
+            models = this.imageService.GetAll();
+
+            ViewBag.Message = models;
+
+            return View();
         }
 
         [HttpPost]
@@ -54,7 +56,7 @@
 
             this.imageService.Add(model);
 
-            return Ok();
+            return RedirectToAction("Index");
         }
     }
 }

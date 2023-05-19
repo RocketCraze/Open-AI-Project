@@ -5,9 +5,9 @@ namespace OpenAIProject.Controllers
 {
     public class ImageGenerationController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
     }
 }

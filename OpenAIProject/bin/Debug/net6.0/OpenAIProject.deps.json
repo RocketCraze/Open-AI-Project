@@ -15,12 +15,14 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
           "Microsoft.IdentityModel.JsonWebTokens": "6.30.1",
           "Newtonsoft.Json": "13.0.3",
-          "OpenAI": "1.7.2"
+          "OpenAI": "1.7.2",
+          "bootstrap": "5.2.3"
         },
         "runtime": {
           "OpenAIProject.dll": {}
         }
       },
+      "bootstrap/5.2.3": {},
       "DevExtreme.AspNet.Core/22.2.4": {
         "dependencies": {
           "DevExtreme.AspNet.Data": "2.9.0",
@@ -554,6 +556,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "bootstrap/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tZZrH4HdqBr/oeUlGoc2KliYlwXeN3qyhKgc1B5dc585+lnMkcD4A5yIX2NmNoXCCagQQiQGKn7A97sWoo2AOw==",
+      "path": "bootstrap/5.2.3",
+      "hashPath": "bootstrap.5.2.3.nupkg.sha512"
     },
     "DevExtreme.AspNet.Core/22.2.4": {
       "type": "package",

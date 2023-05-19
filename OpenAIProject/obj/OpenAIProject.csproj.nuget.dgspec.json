@@ -78,6 +78,10 @@
             "OpenAI": {
               "target": "Package",
               "version": "[1.7.2, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             }
           },
           "imports": [

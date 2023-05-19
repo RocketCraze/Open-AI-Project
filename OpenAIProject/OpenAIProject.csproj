@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.2.3" />
     <PackageReference Include="DevExtreme.AspNet.Data" Version="2.9.0" />
     <PackageReference Include="DevExtreme.AspNet.Core" Version="22.2.4" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
