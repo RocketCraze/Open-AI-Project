@@ -3,7 +3,11 @@
     using DevExtreme.AspNet.Data;
     using DevExtreme.AspNet.Mvc;
 
+    using FluentValidation;
+    using FluentValidation.AspNetCore;
+
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.ModelBinding;
 
     using Newtonsoft.Json;
 
@@ -16,10 +20,12 @@
     public class ChatGPTWebAPIController : Controller
     {
         private readonly IChatService chatService;
+        private readonly IValidator<ChatGPTMessage> validator;
 
-        public ChatGPTWebAPIController(IChatService chatService)
+        public ChatGPTWebAPIController(IChatService chatService, IValidator<ChatGPTMessage> validator)
         {
             this.chatService = chatService;
+            this.validator = validator;
         }
 
         [HttpGet("/GetChats")]
@@ -38,6 +44,13 @@
             var model = new ChatGPTMessage();
             JsonConvert.PopulateObject(values, model);
             model.role = "user";
+
+            var result = this.validator.Validate(model, _ => _.IncludeRuleSets("Create"));
+            if (!result.IsValid)
+            {
+                result.AddToModelState(this.ModelState);
+                return this.BadRequest(this.ModelState.ToFullErrorString());
+            }
 
             var chat = api.Chat.CreateConversation();
 
@@ -59,10 +72,8 @@
             }
             else
             {
-                return this.BadRequest();
-            }
-
-            
+                return this.BadRequest("Error retrieving information");
+            }            
 
             return Ok();
         }

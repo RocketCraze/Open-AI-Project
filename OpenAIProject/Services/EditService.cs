@@ -1,9 +1,9 @@
-﻿using OpenAIProject.Data;
-using OpenAIProject.Interfaces;
-using OpenAIProject.Models;
-
-namespace OpenAIProject.Services
+﻿namespace OpenAIProject.Services
 {
+    using OpenAIProject.Data;
+    using OpenAIProject.Interfaces;
+    using OpenAIProject.Models;
+
     public class EditService : IEditService
     {
         private readonly ApplicationDbContext context;

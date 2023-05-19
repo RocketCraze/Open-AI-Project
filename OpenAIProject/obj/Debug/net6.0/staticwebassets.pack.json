@@ -425,10 +425,6 @@
       "PackagePath": "staticwebassets\\css\\imagegenerationstyling.css"
     },
     {
-      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\styling.css",
-      "PackagePath": "staticwebassets\\css\\styling.css"
-    },
-    {
       "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\FileSaver.js",
       "PackagePath": "staticwebassets\\js\\devextreme\\FileSaver.js"
     },
@@ -743,10 +739,6 @@
     {
       "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.node.js",
       "PackagePath": "staticwebassets\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.node.js"
-    },
-    {
-      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\hidegrid.js",
-      "PackagePath": "staticwebassets\\js\\hidegrid.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.OpenAIProject.Microsoft.AspNetCore.StaticWebAssets.props",

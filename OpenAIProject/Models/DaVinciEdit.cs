@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace OpenAIProject.Models
+﻿namespace OpenAIProject.Models
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.ComponentModel.DataAnnotations;
+
     public class DaVinciEdit
     {
         [Key]

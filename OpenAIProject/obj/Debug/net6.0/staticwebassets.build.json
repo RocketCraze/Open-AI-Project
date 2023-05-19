@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zDRySBlPQi0hzSdWG3+/tKyoWOSgZ6U1Yc6XrqtmZOg=",
+  "Hash": "ncZzoe6gFRj1NQ0AQhwuf9z/A70urNuhhKtHLWj7Djc=",
   "Source": "OpenAIProject",
   "BasePath": "_content/OpenAIProject",
   "Mode": "Default",
@@ -1819,23 +1819,6 @@
       "OriginalItemSpec": "wwwroot\\css\\Site.css"
     },
     {
-      "Identity": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\styling.css",
-      "SourceId": "OpenAIProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\",
-      "BasePath": "_content/OpenAIProject",
-      "RelativePath": "css/styling.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\styling.css"
-    },
-    {
       "Identity": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\aspnet\\dx.aspnet.data.js",
       "SourceId": "OpenAIProject",
       "SourceType": "Discovered",
@@ -3177,23 +3160,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\devextreme\\vectormap-utils\\dx.vectormaputils.node.js"
-    },
-    {
-      "Identity": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\hidegrid.js",
-      "SourceId": "OpenAIProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\",
-      "BasePath": "_content/OpenAIProject",
-      "RelativePath": "js/hidegrid.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\hidegrid.js"
     }
   ]
 }

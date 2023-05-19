@@ -7,6 +7,9 @@ namespace OpenAIProject
     using OpenAIProject.Data;
     using OpenAIProject.Interfaces;
     using OpenAIProject.Services;
+    using FluentValidation;
+    using OpenAIProject.Models;
+    using OpenAIProject.Validators;
 
     public static class Program
     {
@@ -22,6 +25,10 @@ namespace OpenAIProject
             builder.Services.AddScoped<IChatService, ChatService>();
             builder.Services.AddScoped<IEditService, EditService>();
             builder.Services.AddScoped<IImageService, ImageService>();
+
+            builder.Services.AddScoped<IValidator<ChatGPTMessage>, ChatGPTValidator>();
+            builder.Services.AddScoped<IValidator<DaVinciEdit>, DaVinciValidator>();
+            builder.Services.AddScoped<IValidator<ImageGenerationAI>, ImageGenerationValidator>();
 
             builder.Services
             .AddControllersWithViews()

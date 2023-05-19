@@ -3,9 +3,14 @@
     using DevExtreme.AspNet.Data;
     using DevExtreme.AspNet.Mvc;
 
+    using FluentValidation;
+    using FluentValidation.AspNetCore;
+
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.ModelBinding;
 
     using Newtonsoft.Json;
+
     using OpenAI;
     using OpenAI.Edits;
 
@@ -16,10 +21,12 @@
     public class DaVinciWebAPIController : Controller
     {
         private readonly IEditService editService;
+        private readonly IValidator<DaVinciEdit> validator;
 
-        public DaVinciWebAPIController(IEditService editService)
+        public DaVinciWebAPIController(IEditService editService, IValidator<DaVinciEdit> validator)
         {
             this.editService = editService;
+            this.validator = validator;
         }
 
         [HttpGet("/GetEdits")]
@@ -39,6 +46,13 @@
             JsonConvert.PopulateObject(values, model);
             model.role = "user";
 
+            var result = this.validator.Validate(model, _ => _.IncludeRuleSets("Create"));
+            if (!result.IsValid)
+            {
+                result.AddToModelState(this.ModelState);
+                return this.BadRequest(this.ModelState.ToFullErrorString());
+            }
+
             var request = new EditRequest(model.content, "Fix the spelling mistakes");
             var response = await api.EditsEndpoint.CreateEditAsync(request);
 
@@ -55,10 +69,8 @@
             }
             else
             {
-                return this.BadRequest();
-            }
-
-            
+                return this.BadRequest("Error retrieving information");
+            }            
 
             return Ok();
         }

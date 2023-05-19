@@ -1,27 +1,33 @@
 ﻿namespace OpenAIProject.WebAPIControllers
 {
-    using DevExtreme.AspNet.Data;
+    using System;
+
     using DevExtreme.AspNet.Mvc;
 
+    using FluentValidation;
+    using FluentValidation.AspNetCore;
+
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+    using Microsoft.AspNetCore.Mvc.ModelBinding;
+
     using Newtonsoft.Json;
 
     using OpenAI_API;
     using OpenAI_API.Images;
 
     using OpenAIProject.Interfaces;
-    using OpenAIProject.Models;
-    using System;
+    using OpenAIProject.Models;    
 
     [Route("api/[controller]")]
     public class ImageGenerationWebAPIController : Controller
     {
         private readonly IImageService imageService;
+        private readonly IValidator<ImageGenerationAI> validator;
 
-        public ImageGenerationWebAPIController(IImageService imageService)
+        public ImageGenerationWebAPIController(IImageService imageService, IValidator<ImageGenerationAI> validator)
         {
             this.imageService = imageService;
+            this.validator = validator;
         }
 
         public IActionResult Index(DataSourceLoadOptions loadOptions)
@@ -40,6 +46,13 @@
             var model = new ImageGenerationAI();
             JsonConvert.PopulateObject(values, model);
             var prompt = model.Prompt;
+
+            var result = this.validator.Validate(model, _ => _.IncludeRuleSets("Create"));
+            if (!result.IsValid)
+            {
+                result.AddToModelState(this.ModelState);
+                return this.BadRequest(this.ModelState.ToFullErrorString());
+            }
 
             OpenAIAPI api = new OpenAIAPI("YOUR_API_KEY_HERE");
 
@@ -60,7 +73,7 @@
             }
             else
             {
-                return this.BadRequest();
+                return this.BadRequest("Error retrieving information");
             }
 
             return RedirectToAction("Index");
