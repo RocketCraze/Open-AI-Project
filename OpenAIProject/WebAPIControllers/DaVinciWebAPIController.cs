@@ -44,7 +44,7 @@
 
             var model = new DaVinciEdit();
             JsonConvert.PopulateObject(values, model);
-            model.role = "user";
+            model.Role = "user";
 
             var result = this.validator.Validate(model, _ => _.IncludeRuleSets("Create"));
             if (!result.IsValid)
@@ -53,14 +53,14 @@
                 return this.BadRequest(this.ModelState.ToFullErrorString());
             }
 
-            var request = new EditRequest(model.content, "Fix the spelling mistakes");
+            var request = new EditRequest(model.Content, "Fix the spelling mistakes");
             var response = await api.EditsEndpoint.CreateEditAsync(request);
 
             if (response != null)
             {
                 var output = new DaVinciEdit();
-                output.role = "assistant";
-                output.content = response.ToString();
+                output.Role = "assistant";
+                output.Content = response.ToString();
 
                 result = this.validator.Validate(output, _ => _.IncludeRuleSets("Create"));
                 if (!result.IsValid)

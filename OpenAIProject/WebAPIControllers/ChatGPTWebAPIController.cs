@@ -43,7 +43,7 @@
 
             var model = new ChatGPTMessage();
             JsonConvert.PopulateObject(values, model);
-            model.role = "user";
+            model.Role = "user";
 
             var result = this.validator.Validate(model, _ => _.IncludeRuleSets("Create"));
             if (!result.IsValid)
@@ -54,15 +54,15 @@
 
             var chat = api.Chat.CreateConversation();
 
-            chat.AppendUserInput(model.content);
+            chat.AppendUserInput(model.Content);
 
             string response = await chat.GetResponseFromChatbotAsync();
 
             if (response != null)
             {
                 var output = new ChatGPTMessage();
-                output.role = "assistant";
-                output.content = response;
+                output.Role = "assistant";
+                output.Content = response;
 
                 result = this.validator.Validate(output, _ => _.IncludeRuleSets("Create"));
                 if (!result.IsValid)

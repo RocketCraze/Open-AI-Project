@@ -16,14 +16,14 @@
 
         private void GeneralRules()
         {
-            this.RuleFor(_ => _.role)
+            this.RuleFor(_ => _.Role)
                 .NotNull()
                 .WithMessage("Role cannot be empty")
                 .MinimumLength(1)
                 .WithMessage("Role cannot be empty")
                 .MaximumLength(50);
 
-            this.RuleFor(_ => _.content)
+            this.RuleFor(_ => _.Content)
                 .NotNull()
                 .WithMessage("Question cannot be empty")
                 .MinimumLength(1)

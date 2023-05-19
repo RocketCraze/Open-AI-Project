@@ -9,12 +9,12 @@
     {
         [Key]
         [Column("pkID")]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Column("Role")]
-        public string role { get; set; }
+        public string Role { get; set; }
 
         [Column("Content")]
-        public string content { get; set; }
+        public string Content { get; set; }
     }
 }

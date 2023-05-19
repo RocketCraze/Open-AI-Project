@@ -10,10 +10,10 @@ Html.DevExtreme().DataGrid<DaVinciEdit>()
         .Controller("DaVinciWebAPI")
         .LoadAction("GetEdits")
         .InsertAction("Post")
-        .Key("id"))
+        .Key("Id"))
     .Columns(_ =>
     {
-        _.AddFor(_ => _.role)
+        _.AddFor(_ => _.Role)
             .AllowEditing(false)
             .EditorOptions(new
             {
@@ -21,7 +21,7 @@ Html.DevExtreme().DataGrid<DaVinciEdit>()
                 width = 100,
             })
             .Width(100);
-        _.AddFor(_ => _.content)
+        _.AddFor(_ => _.Content)
             .Caption("Spell Check")
             .EditorOptions(new
             {

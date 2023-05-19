@@ -10,10 +10,10 @@ Html.DevExtreme().DataGrid<ChatGPTMessage>()
         .Controller("ChatGPTWebAPI")
         .LoadAction("GetChats")
         .InsertAction("Post")
-        .Key("id"))    
+        .Key("Id"))    
     .Columns(_ =>
     {
-        _.AddFor(_ => _.role)
+        _.AddFor(_ => _.Role)
             .AllowEditing(false)
             .EditorOptions(new
             {
@@ -21,7 +21,7 @@ Html.DevExtreme().DataGrid<ChatGPTMessage>()
                 width = 100,
             })
             .Width(100);
-        _.AddFor(_ => _.content)
+        _.AddFor(_ => _.Content)
             .Caption("Question/Answer")
             .EditorOptions(new
             {
