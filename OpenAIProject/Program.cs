@@ -20,6 +20,8 @@ namespace OpenAIProject
             // Add services to the container.
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddScoped<IChatService, ChatService>();
+            builder.Services.AddScoped<IEditService, EditService>();
+            builder.Services.AddScoped<IImageService, ImageService>();
 
             builder.Services
             .AddControllersWithViews()

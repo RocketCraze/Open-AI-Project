@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\css\\devextreme\\icons\\dxiconsmaterial.woff2"
     },
     {
+      "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\styling.css",
+      "PackagePath": "staticwebassets\\css\\styling.css"
+    },
+    {
       "Id": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\FileSaver.js",
       "PackagePath": "staticwebassets\\js\\devextreme\\FileSaver.js"
     },

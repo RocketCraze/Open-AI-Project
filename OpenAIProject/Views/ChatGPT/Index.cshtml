@@ -5,7 +5,12 @@
 @(
 Html.DevExtreme().DataGrid<ChatGPTMessage>()
     .ShowBorders(true)
-    .DataSource(_ => _.Mvc().Controller("ChatGPTWebAPI").LoadAction("GetChats").InsertAction("Post").Key("id"))
+    .DataSource(_ => _
+        .Mvc()
+        .Controller("ChatGPTWebAPI")
+        .LoadAction("GetChats")
+        .InsertAction("Post")
+        .Key("id"))    
     .Columns(_ =>
     {
         _.AddFor(_ => _.role)
@@ -25,10 +30,6 @@ Html.DevExtreme().DataGrid<ChatGPTMessage>()
             });
     })
     .Paging(_ => _.PageSize(10))
-    .FilterRow(_ => _.Visible(true))
-    .HeaderFilter(_ => _.Visible(true))
-    .GroupPanel(_ => _.Visible(true))
-    .Grouping(_ => _.AutoExpandAll(false))
     .RemoteOperations(true)
     .Editing(_ => _
         .Mode(GridEditMode.Form)
@@ -37,6 +38,7 @@ Html.DevExtreme().DataGrid<ChatGPTMessage>()
         .AllowAdding(true)
         .RefreshMode(GridEditRefreshMode.Reshape)
         )
+    .WordWrapEnabled(true)
     .Toolbar(toolbar =>
     {
         toolbar.Items(_ => _

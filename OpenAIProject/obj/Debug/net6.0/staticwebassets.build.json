@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JNftC3ojB/B2pX/9HEl6rsjSgbZ60xx9WuEa0LODsyQ=",
+  "Hash": "P7HO1QF/7EAxCM4xYzkqS8MHeF8zx4Xf83KkIbxZLnk=",
   "Source": "OpenAIProject",
   "BasePath": "_content/OpenAIProject",
   "Mode": "Default",
@@ -1052,6 +1052,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Site.css"
+    },
+    {
+      "Identity": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\css\\styling.css",
+      "SourceId": "OpenAIProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\",
+      "BasePath": "_content/OpenAIProject",
+      "RelativePath": "css/styling.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styling.css"
     },
     {
       "Identity": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\wwwroot\\js\\devextreme\\aspnet\\dx.aspnet.data.js",

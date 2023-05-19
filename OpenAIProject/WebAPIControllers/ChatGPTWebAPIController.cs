@@ -6,12 +6,11 @@
     using Microsoft.AspNetCore.Mvc;
 
     using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
+
     using OpenAI_API;
+
     using OpenAIProject.Interfaces;
     using OpenAIProject.Models;
-    using System.Net.Http.Headers;
-    using static OpenAIProject.WebAPIControllers.ChatGPTWebAPIController;
 
     [Route("api/[controller]")]
     public class ChatGPTWebAPIController : Controller
@@ -34,11 +33,13 @@
         [HttpPost]
         public async Task<IActionResult> Post(string values)
         {
-            OpenAIAPI api = new OpenAIAPI("API_KEY_HERE");
+            OpenAIAPI api = new OpenAIAPI("YOUR_API_KEY_HERE");
 
             var model = new ChatGPTMessage();
             JsonConvert.PopulateObject(values, model);
             model.role = "user";
+
+            this.chatService.Add(model);
 
             var chat = api.Chat.CreateConversation();
 
@@ -50,7 +51,7 @@
             output.role = "assistant";
             output.content = response;
 
-            this.chatService.Add(model);
+            
 
             this.chatService.Add(output);
 

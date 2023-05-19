@@ -12,5 +12,7 @@
         }
 
         public DbSet<ChatGPTMessage> Chats { get; set; }
+        public DbSet<DaVinciEdit> Edits { get; set;}
+        public DbSet<ImageGenerationAI> ImageGeneration { get; set;}
     }
 }

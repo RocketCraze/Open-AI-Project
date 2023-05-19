@@ -1,0 +1,50 @@
+﻿@using OpenAIProject.Models
+
+<h2>Spell Checker</h2>
+
+@(
+Html.DevExtreme().DataGrid<DaVinciEdit>()
+    .ShowBorders(true)
+    .DataSource(_ => _
+        .Mvc()
+        .Controller("DaVinciWebAPI")
+        .LoadAction("GetEdits")
+        .InsertAction("Post")
+        .Key("id"))
+    .Columns(_ =>
+    {
+        _.AddFor(_ => _.role)
+            .AllowEditing(false)
+            .EditorOptions(new
+            {
+                placeholder = "user",
+                width = 100,
+            })
+            .Width(100);
+        _.AddFor(_ => _.content)
+            .Caption("Spell Check")
+            .EditorOptions(new
+            {
+                placeholder = "Add text here to check spelling...",
+                width = "max",
+            });
+    })
+    .Paging(_ => _.PageSize(10))
+    .RemoteOperations(true)
+    .Editing(_ => _
+        .Mode(GridEditMode.Form)
+        .UseIcons(true)
+        .Texts(_ => _.AddRow("Check Spelling"))
+        .AllowAdding(true)
+        .RefreshMode(GridEditRefreshMode.Reshape)
+        )
+    .WordWrapEnabled(true)
+    .Toolbar(toolbar =>
+    {
+        toolbar.Items(_ => _
+            .Add()
+            .Name("addRowButton")
+            .ShowText(ToolbarItemShowTextMode.Always)
+        );
+    })
+)
