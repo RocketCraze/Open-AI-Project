@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[1.7.2, )"
             },
+            "OpenAI-DotNet": {
+              "target": "Package",
+              "version": "[6.8.5, )"
+            },
             "bootstrap": {
               "target": "Package",
               "version": "[5.2.3, )"

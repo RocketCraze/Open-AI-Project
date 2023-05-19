@@ -73,3 +73,4 @@ C:\Users\leonlr\OneDrive - PaySpace\Documents\Grad Dev\Open-AI-Project\OpenAIPro
 C:\Users\leonlr\OneDrive - PaySpace\Documents\Grad Dev\Open-AI-Project\OpenAIProject\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\leonlr\OneDrive - PaySpace\Documents\Grad Dev\Open-AI-Project\OpenAIProject\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\leonlr\OneDrive - PaySpace\Documents\Grad Dev\Open-AI-Project\OpenAIProject\bin\Debug\net6.0\OpenAI_API.dll
+C:\Users\leonlr\OneDrive - PaySpace\Documents\Grad Dev\Open-AI-Project\OpenAIProject\bin\Debug\net6.0\OpenAI-DotNet.dll

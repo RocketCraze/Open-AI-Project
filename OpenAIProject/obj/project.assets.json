@@ -860,6 +860,15 @@
           }
         }
       },
+      "OpenAI-DotNet/6.8.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/OpenAI-DotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/OpenAI-DotNet.dll": {}
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -2198,6 +2207,20 @@
         "openai.nuspec"
       ]
     },
+    "OpenAI-DotNet/6.8.5": {
+      "sha512": "PTRFIehAGn/N4H18FBVfgjjfCUUfm61cynFGErULqZCuk7H9VrNgojivcAbSTiJ8gJLZuZzAuzMx+9oBul5ihA==",
+      "type": "package",
+      "path": "openai-dotnet/6.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/OpenAI-DotNet-Icon.png",
+        "README.md",
+        "lib/net6.0/OpenAI-DotNet.dll",
+        "openai-dotnet.6.8.5.nupkg.sha512",
+        "openai-dotnet.nuspec"
+      ]
+    },
     "System.Collections.Immutable/6.0.0": {
       "sha512": "l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "type": "package",
@@ -2899,6 +2922,7 @@
       "Microsoft.IdentityModel.JsonWebTokens >= 6.30.1",
       "Newtonsoft.Json >= 13.0.3",
       "OpenAI >= 1.7.2",
+      "OpenAI-DotNet >= 6.8.5",
       "bootstrap >= 5.2.3"
     ]
   },
@@ -2980,6 +3004,10 @@
           "OpenAI": {
             "target": "Package",
             "version": "[1.7.2, )"
+          },
+          "OpenAI-DotNet": {
+            "target": "Package",
+            "version": "[6.8.5, )"
           },
           "bootstrap": {
             "target": "Package",

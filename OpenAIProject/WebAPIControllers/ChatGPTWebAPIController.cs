@@ -39,21 +39,30 @@
             JsonConvert.PopulateObject(values, model);
             model.role = "user";
 
-            this.chatService.Add(model);
-
             var chat = api.Chat.CreateConversation();
 
             chat.AppendUserInput(model.content);
 
             string response = await chat.GetResponseFromChatbotAsync();
 
-            var output = new ChatGPTMessage();
-            output.role = "assistant";
-            output.content = response;
+            if (response != null)
+            {
+                var output = new ChatGPTMessage();
+                output.role = "assistant";
+                output.content = response;
+
+
+
+                this.chatService.Add(model);
+
+                this.chatService.Add(output);
+            }
+            else
+            {
+                return this.BadRequest();
+            }
 
             
-
-            this.chatService.Add(output);
 
             return Ok();
         }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AlkanD37U234GFMFuh7KWoajXljs1dfEfDw/Tf2hmV9OVrl/f5bUcuc06HTsXc2L3oXhho8qsQTW2lo/dAhaFg==",
+  "dgSpecHash": "tFLf8rWtqdARLt1SZxpgq7ptRXCb6XPQJRb5byxcwys8yDUX09ZWqlDjulHjhjBC/Q04KF6u9sIE26IHv8cijg==",
   "success": true,
   "projectFilePath": "C:\\Users\\leonlr\\OneDrive - PaySpace\\Documents\\Grad Dev\\Open-AI-Project\\OpenAIProject\\OpenAIProject.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\leonlr\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\leonlr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\leonlr\\.nuget\\packages\\openai\\1.7.2\\openai.1.7.2.nupkg.sha512",
+    "C:\\Users\\leonlr\\.nuget\\packages\\openai-dotnet\\6.8.5\\openai-dotnet.6.8.5.nupkg.sha512",
     "C:\\Users\\leonlr\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\leonlr\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\leonlr\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

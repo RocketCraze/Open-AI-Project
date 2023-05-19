@@ -6,10 +6,8 @@
     using Microsoft.AspNetCore.Mvc;
 
     using Newtonsoft.Json;
-
-    using OpenAI_API;
-    using OpenAI_API.Chat;
-    using OpenAI_API.Models;
+    using OpenAI;
+    using OpenAI.Edits;
 
     using OpenAIProject.Interfaces;
     using OpenAIProject.Models;
@@ -35,36 +33,32 @@
         [HttpPost]
         public async Task<IActionResult> Post(string values)
         {
-            OpenAIAPI api = new OpenAIAPI("YOUR_API_KEY_HERE");
+            var api = new OpenAIClient("YOUR_API_KEY_HERE");
 
             var model = new DaVinciEdit();
             JsonConvert.PopulateObject(values, model);
             model.role = "user";
 
-            var chat = api.Chat.CreateConversation();
+            var request = new EditRequest(model.content, "Fix the spelling mistakes");
+            var response = await api.EditsEndpoint.CreateEditAsync(request);
 
-            chat.AppendUserInput(model.content);
+            if (response != null)
+            {
+                var output = new DaVinciEdit();
+                output.role = "assistant";
+                Console.WriteLine(response);
+                output.content = response.ToString();
 
-            string response = await chat.GetResponseFromChatbotAsync();
+                this.editService.Add(model);
 
-        //    var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
-        //    {
-        //        Model = Model.DavinciText,
-        //        Temperature = 0.1,
-        //        MaxTokens = 50,
-        //        Instructions = "Fix the spelling mistakes",
-        //        Messages = new ChatMessage[] {
-        //    new ChatMessage(ChatMessageRole.User, "Hello!")
-        //}
-        //    });
+                this.editService.Add(output);
+            }
+            else
+            {
+                return this.BadRequest();
+            }
 
-            var output = new DaVinciEdit();
-            output.role = "assistant";
-            output.content = response;
-
-            this.editService.Add(model);
-
-            this.editService.Add(output);
+            
 
             return Ok();
         }

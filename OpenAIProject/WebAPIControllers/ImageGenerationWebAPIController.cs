@@ -43,18 +43,25 @@
 
             OpenAIAPI api = new OpenAIAPI("YOUR_API_KEY_HERE");
 
-            var result = await api.ImageGenerations.CreateImageAsync(new ImageGenerationRequest(prompt, 1, ImageSize._256));
+            var response = await api.ImageGenerations.CreateImageAsync(new ImageGenerationRequest(prompt, 1, ImageSize._256));
 
-            model.Image = result.Data[0].Url;
-
-            using (var client = new HttpClient())
+            if (response != null)
             {
-                var bytes = await client.GetByteArrayAsync(model.Image);
-                var base64String = Convert.ToBase64String(bytes);
-                model.Image = base64String;
-            }
+                model.Image = response.Data[0].Url;
 
-            this.imageService.Add(model);
+                using (var client = new HttpClient())
+                {
+                    var bytes = await client.GetByteArrayAsync(model.Image);
+                    var base64String = Convert.ToBase64String(bytes);
+                    model.Image = base64String;
+                }
+
+                this.imageService.Add(model);
+            }
+            else
+            {
+                return this.BadRequest();
+            }
 
             return RedirectToAction("Index");
         }
