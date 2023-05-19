@@ -1,14 +1,8 @@
 ﻿.dx-datagrid-rowsview dx-empty {
-    visibility: hidden;
-    display: none;
+    display: none
 }
+
 
 .dx-datagrid-headers {
-    display: none;
-    visibility: hidden;
-}
-
-.dx-datagrid-content {
-    display: none;
-    visibility: hidden;
+    display: none
 }
