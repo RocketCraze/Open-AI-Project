@@ -16,7 +16,7 @@
     using OpenAI_API.Images;
 
     using OpenAIProject.Interfaces;
-    using OpenAIProject.Models;    
+    using OpenAIProject.Models;
 
     [Route("api/[controller]")]
     public class ImageGenerationWebAPIController : Controller

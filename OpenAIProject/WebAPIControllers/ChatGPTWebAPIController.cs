@@ -64,6 +64,12 @@
                 output.role = "assistant";
                 output.content = response;
 
+                result = this.validator.Validate(output, _ => _.IncludeRuleSets("Create"));
+                if (!result.IsValid)
+                {
+                    result.AddToModelState(this.ModelState);
+                    return this.BadRequest(this.ModelState.ToFullErrorString());
+                }
 
 
                 this.chatService.Add(model);

@@ -60,8 +60,14 @@
             {
                 var output = new DaVinciEdit();
                 output.role = "assistant";
-                Console.WriteLine(response);
                 output.content = response.ToString();
+
+                result = this.validator.Validate(output, _ => _.IncludeRuleSets("Create"));
+                if (!result.IsValid)
+                {
+                    result.AddToModelState(this.ModelState);
+                    return this.BadRequest(this.ModelState.ToFullErrorString());
+                }
 
                 this.editService.Add(model);
 
